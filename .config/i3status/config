@@ -1,0 +1,46 @@
+general {
+  colors = true
+  interval = 3
+}
+
+order += "cpu_usage"
+order += "load"
+order += "disk /"
+order += "disk /home"
+order += "wireless wls128"
+order += "volume master"
+order += "tztime local"
+
+wireless wls128 {
+  format_up = "%quality %essid %ip"
+  format_down = ""
+}
+
+cpu_usage {
+  format = "CPU %usage "
+}
+
+tztime local {
+  format = "%Y-%m-%d %H:%M:%S"
+}
+
+load {
+  format = "%1min %5min %15min"
+}
+
+disk "/" {
+  format = "Used: / %percentage_used"
+  separator = false
+}
+
+disk "/home" {
+  format = "/home %percentage_used"
+}
+
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: muted (%volume)"
+  device = "hw:1"
+  mixer = "Master"
+  mixer_idx = 0
+}
