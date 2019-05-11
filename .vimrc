@@ -4,19 +4,11 @@ filetype off                   " required by Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on      " required by Vundle
-" }
-
-" vim-airline, vim-airline-themes {
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme='papercolor'
 " }
 
 " papercolor-theme {
