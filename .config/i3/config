@@ -176,8 +176,7 @@ focus_follows_mouse no
 # finds out, if available)
 bar {
         position top
-        #status_command i3status
-        status_command i3blocks -c ~/.config/i3blocks/config
+        status_command i3status
 }
 
 # Handle system shutdown, reboot, etc.
