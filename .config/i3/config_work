@@ -31,7 +31,8 @@ font pango:Terminus 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt256c-ml
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -215,8 +216,8 @@ bindsym --release Shift+Print exec scrot -s
 # Take a screenshot of a screen region and copy it to a clipboard
 bindsym --release Print exec scrot
 
-# Fcitx
-exec --no-startup-id ibus-daemon
+# iBus
+exec --no-startup-id ibus-daemon --xim
 
 # dunst
 exec --no-startup-id dunst
