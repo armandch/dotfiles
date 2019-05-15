@@ -2,7 +2,7 @@
 # ~/.bashrc
 #
 
-PS1='[\u@\h \w]\$ '
+PS1="[\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[35;1m\]\w\[\033[m\]] "
 PROMPT_COMMAND=''
 
 # Colorize output
