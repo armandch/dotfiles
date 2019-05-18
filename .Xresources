@@ -95,31 +95,18 @@ URxvt.inputMethod: fcitx
 ! URXVT Font config
 !--------------------------------------------------------------------------------
 
-! #define font1 Source Code Pro for Powerline
-! #define font2 xos4 Terminess Powerline
-! #define font3 Noto Sans CJK TC
-
 #define font1 xos4 Terminus
 #define font2 Bitstream Vera Sans Mono
-#define font3 Noto Sans CJK TC
 
-! A comma separated list of font names that are checked in order when trying to
-! find glyphs for characters. Man for coding, nothing beats the terminus font.
-! Nothing! Also, notice that boldFont, italicFont, and boldItalicFont are
-! specified as well. This makes a huge difference you will notice right away.
-!URxvt*font: -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-*-*,xft:terminus:pixelsize:18
-!URxvt*boldFont: -xos4-terminus-bold-*-*-*-18-*-*-*-*-*-*-*,xft:terminus:bold:pixelsize:18
-!URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=18
-!URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=18
-URxvt*font: xft:font1:pixelsize=16, xft:font3:pixelsize=14
-URxvt*boldFont: xft:font1:bold:pixelsize=16, xft:font3:bold:pixelsize=14
-URxvt*italicFont: xft:font1:italic:pixelsize=16, xft:font3:italic:pixelsize=14
-URxvt*boldItalicFont: xft:font1:bold:italic:pixelsize=16, xft:font3:bold:italic:pixelsize=14
+URxvt*font: xft:font1:pixelsize=16
+URxvt*boldFont: xft:font1:bold:pixelsize=16
+URxvt*italicFont: xft:font2:italic:pixelsize=16
+URxvt*boldItalicFont: xft:font2:bold:italic:pixelsize=16
 
 !---------------------------------
 ! Xft settings
 ! --------------------------------
-Xft.dpi: 110
+Xft.dpi: 96
 Xft.rgba: rgb
 Xft.antialias: true
 Xft.hinting: true
