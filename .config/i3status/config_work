@@ -1,0 +1,63 @@
+general {
+  colors = true
+  interval = 5
+  output_format = i3bar
+  color_good = "#2267a5"
+  color_degraded = "#8c7f22"
+  color_bad = "#be2422"
+}
+
+order += "cpu_usage"
+order += "load"
+order += "disk /"
+order += "disk /ssd"
+order += "disk /home"
+order += "disk /HardDrive"
+order += "ethernet enp0s25"
+order += "volume master"
+order += "tztime local"
+
+cpu_usage {
+  format = " CPU: %usage,"
+  separator = false
+}
+
+load {
+  format = "LOAD: %5min "
+}
+
+disk "/" {
+  format = " Root: %free,"
+  separator = false
+}
+
+disk "/ssd" {
+  format = "SSD: %free,"
+  separator = false
+}
+
+disk "/home" {
+  format = "Home: %free,"
+  separator = false
+}
+
+disk "/HardDrive" {
+  format = "HardDrive: %free "
+}
+
+ethernet enp0s25 {
+  format_up = " LAN: %ip (%speed) "
+  format_down = " LAN: down "
+}
+
+volume master {
+  format = " VOL: %volume "
+  format_muted = " VOL: %volume "
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+}
+
+tztime local {
+  format = " %b %d, %Y (%a) %l:%M %p "
+}
