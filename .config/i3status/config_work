@@ -2,9 +2,9 @@ general {
   colors = true
   interval = 5
   output_format = i3bar
-  color_good = "#2267a5"
-  color_degraded = "#8c7f22"
-  color_bad = "#be2422"
+  color_good = "#859900"
+  color_degraded = "#cb4b16"
+  color_bad = "#dc322f"
 }
 
 order += "cpu_usage"
@@ -46,7 +46,7 @@ disk "/HardDrive" {
 }
 
 ethernet enp0s25 {
-  format_up = " LAN: %ip (%speed) "
+  format_up = " LAN: %ip "
   format_down = " LAN: down "
 }
 
