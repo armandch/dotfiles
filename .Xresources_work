@@ -93,6 +93,9 @@ URxvt.locale: true
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
+! For Solarized theme
+URxvt.intensityStyles: false
+
 !--------------------------------------------------------------------------------
 ! URXVT Font config
 !--------------------------------------------------------------------------------
@@ -102,55 +105,58 @@ URxvt*boldFont: xft:Terminus:bold:pixelsize=16
 URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:pixelsize=16
 URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:pixelsize=16
 
-!---------------------------------
+!--------------------------------------------------------------------------------
 ! Xft settings
-! --------------------------------
+!--------------------------------------------------------------------------------
 Xft.dpi: 96
 Xft.rgba: rgb
-Xft.antialias: true
+Xft.antialias: false
 Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.autohint: true
 Xft.lcdfilter: lcddefault
 
+
 !--------------------------------------------------------------------------------
-! Color Scheme
-!   https://terminal.sexy
+! Solarized dark theme
 !--------------------------------------------------------------------------------
 
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+*background: #002b36
+*foreground: #839496
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
 
-! black
-*.color0:       #282a2e
-*.color8:       #373b41
+! black dark/light
+*color0: #073642
+*color8: #002b36
 
-! red
-*.color1:       #a54242
-*.color9:       #cc6666
+! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
 
-! green
-*.color2:       #8c9440
-*.color10:      #b5bd68
+! green dark/light
+*color2: #859900
+*color10: #586e75
 
-! yellow
-*.color3:       #de935f
-*.color11:      #f0c674
+! yellow dark/light
+*color3: #b58900
+*color11: #657b83
 
-! blue
-*.color4:       #5f819d
-*.color12:      #81a2be
+! blue dark/light
+*color4: #268bd2
+*color12: #839496
 
-! magenta
-*.color5:       #85678f
-*.color13:      #b294bb
+! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
 
-! cyan
-*.color6:       #5e8d87
-*.color14:      #8abeb7
+! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
 
-! white
-*.color7:       #707880
-*.color15:      #c5c8c6
+! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
+

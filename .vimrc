@@ -4,27 +4,17 @@ filetype off                   " required by Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leshill/vim-json'
+Plugin 'sbdchd/neoformat'
 call vundle#end()
 filetype plugin indent on      " required by Vundle
 " }
 
-" papercolor-theme {
-set t_Co=256                   " This is may or may not needed.
-set background=dark
-colorscheme PaperColor
-" }
-
-" NERDTree {
-map <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
-" }
-
-" CtrlP {
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
+" Neoformat {
+autocmd BufWritePre *.js,*.css Neoformat
 " }
 
 " Basic {
@@ -32,8 +22,14 @@ set noexrc                     " don't use local version of .(g)vimrc, .exrc
 syntax on                      " syntax highlighting on
 " }
 
+" Solarized dark theme {
+set background=dark
+colorscheme solarized
+" }
+
 " General {
 set autochdir                  " always switch to the current file directory
+set backspace=indent,eol,start " make backspace a more flexible
 set nobackup                   " don't make backup files
 "set clipboard+=unnamed         " share windows clipboard
 set directory=~/.vim/tmp       " directory to place swap files in
@@ -56,8 +52,8 @@ set sidescrolloff=10           " Keep 5 lines at the size
 " }
 
 " Text Formatting/Layout {
-set expandtab " no real tabs please!
-set shiftwidth=2 " auto-indent amount when using cindent, >>, << and stuff like that
-set softtabstop=2 " when hitting tab or backspace, how many spaces should a tab be (see expandtab)
-set tabstop=4 " real tabs should be 8, and they will show with set list on
+set expandtab                  " no real tabs please!
+set shiftwidth=2               " auto-indent amount when using cindent, >>, << and stuff like that
+set softtabstop=2              " when hitting tab or backspace, how many spaces should a tab be (see expandtab)
+set tabstop=2                  " real tabs should be 8, and they will show with set list on
 "}
