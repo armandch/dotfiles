@@ -110,7 +110,7 @@ URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:pixelsize=16
 !--------------------------------------------------------------------------------
 Xft.dpi: 96
 Xft.rgba: rgb
-Xft.antialias: false
+Xft.antialias: true
 Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.autohint: true
