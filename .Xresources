@@ -91,6 +91,9 @@ URxvt.locale: true
 ! Input method
 URxvt.inputMethod: fcitx
 
+! For Solarized theme
+URxvt.intensityStyles: false
+
 !--------------------------------------------------------------------------------
 ! URXVT Font config
 !--------------------------------------------------------------------------------
