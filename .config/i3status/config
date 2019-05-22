@@ -1,6 +1,10 @@
 general {
   colors = true
   interval = 3
+  output_format = i3bar
+  color_good = "#859900"
+  color_degraded = "#cb4b16"
+  color_bad = "#dc322f"
 }
 
 order += "cpu_usage"
@@ -11,36 +15,38 @@ order += "wireless wls128"
 order += "volume master"
 order += "tztime local"
 
-wireless wls128 {
-  format_up = "%quality %essid %ip"
-  format_down = ""
-}
-
 cpu_usage {
-  format = "CPU %usage "
-}
-
-tztime local {
-  format = "%Y-%m-%d %H:%M:%S"
+  format = " CPU: %usage,"
+  separator = false
 }
 
 load {
-  format = "%1min %5min %15min"
+  format = "Load: %5min "
 }
 
 disk "/" {
-  format = "Used: / %percentage_used"
+  format = " Root: %percentage_used,"
   separator = false
 }
 
 disk "/home" {
-  format = "/home %percentage_used"
+  format = "Home: %percentage_used "
+}
+
+wireless wls128 {
+  format_up = "Wifi: %quality %essid %ip "
+  format_down = "Wifi: down "
 }
 
 volume master {
-  format = "VOL: %volume"
-  format_muted = "♪: muted (%volume)"
+  format = "Vol: %volume "
+  format_muted = "Vol: muted "
   device = "hw:1"
   mixer = "Master"
   mixer_idx = 0
 }
+
+tztime local {
+  format = " %b %d, %Y (%a) %l:%M %p "
+}
+

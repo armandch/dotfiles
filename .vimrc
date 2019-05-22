@@ -5,16 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'leshill/vim-json'
-Plugin 'sbdchd/neoformat'
 call vundle#end()
 filetype plugin indent on      " required by Vundle
-" }
-
-" Neoformat {
-autocmd BufWritePre *.js,*.css Neoformat
 " }
 
 " Basic {

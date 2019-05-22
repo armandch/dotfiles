@@ -100,10 +100,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1: Terminal"
+set $ws2 "2: Web General"
+set $ws3 "3: Web Research"
+set $ws4 "4: Reference"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -169,6 +169,16 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Float windows
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_role="About"] floating enable
+for_window [window_role="Organizer"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
 # Mouse, please stop focus whenever you hover to whatever
 focus_follows_mouse no
 
@@ -177,7 +187,21 @@ focus_follows_mouse no
 bar {
         position top
         status_command i3status
+        colors {
+            background #002b36
+            statusline #839496
+            separator  #586e75
+            focused_workspace  #b58900 #b58900 #002b36
+            active_workspace   #586e75 #586e75 #002b36
+            inactive_workspace #073642 #002b36 #839496
+            urgent_workspace   #dc322f #dc322f #fdf6e3
+        }
 }
+
+client.focused          #002b36 #586e75 #fdf6e3 #268bd2
+client.focused_inactive #002b36 #073642 #839496 #073642
+client.unfocused        #002b36 #073642 #839496 #073642
+client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 
 # Handle system shutdown, reboot, etc.
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
