@@ -11,7 +11,7 @@ order += "cpu_usage"
 order += "load"
 order += "disk /"
 order += "disk /home"
-order += "wireless wls128"
+order += "wireless wlan0"
 order += "volume master"
 order += "tztime local"
 
@@ -33,7 +33,7 @@ disk "/home" {
   format = "Home: %percentage_used "
 }
 
-wireless wls128 {
+wireless wlan0 {
   format_up = "Wifi: %quality %essid %ip "
   format_down = "Wifi: down "
 }
