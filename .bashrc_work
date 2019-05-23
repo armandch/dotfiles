@@ -18,7 +18,7 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Handy alias
-alias vi=vim
+alias vi=nvim
 
 # Monitor Mirroring
 alias my_screen_mirror="xrandr --output DisplayPort-2 --auto --output DisplayPort-3 --auto --same-as DisplayPort-2"
