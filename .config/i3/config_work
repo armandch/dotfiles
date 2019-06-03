@@ -95,8 +95,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # workspace def
-set $ws1 "1: Firefox"
-set $ws2 "2: Chrome"
+set $ws1 "1: Test"
+set $ws2 "2: Web"
 set $ws3 "3: IntelliJ"
 set $ws4 "4: Terminal"
 set $ws5 "5: SQL"
@@ -240,8 +240,20 @@ exec --no-startup-id dunst
 # Compton
 exec --no-startup-id "compton -b"
 
+# Restoring i3wm layouts
+#exec --no-startup-id "i3-msg 'workspace 1: Terminal; append_layout /home/ichen/.config/i3/workspace-1.json'"
+#exec --no-startup-id "i3-msg 'workspace 2: Firefox;  append_layout /home/ichen/.config/i3/workspace-2.json'"
+#exec --no-startup-id "i3-msg 'workspace 3: IntelliJ; append_layout /home/ichen/.config/i3/workspace-3.json'"
+#exec --no-startup-id "i3-msg 'workspace 4: Chrome;   append_layout /home/ichen/.config/i3/workspace-4.json'"
+#exec --no-startup-id "i3-msg 'workspace 5: SQL;      append_layout /home/ichen/.config/i3/workspace-5.json'"
+#exec --no-startup-id "i3-msg 'workspace 6: Other;    append_layout /home/ichen/.config/i3/workspace-6.json'"
+
 # Launch applications when start"
-exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/local/bin/idea.sh'
-exec --no-startup-id i3-msg 'workspace $ws3; exec /usr/bin/urxvt256c-ml'
-exec --no-startup-id i3-msg 'workspace $ws4; exec /usr/local/bin/sqldeveloper'
+#exec urxvt256c-ml
+#exec firefox
+#exec --no-startup-id urxvt256c-ml
+#exec --no-startup-id firefox
+#exec --no-startup-id idea.sh
+#exec --no-startup-id google-chrome-stable
+#exec --no-startup-id sqldeveloper
+#exec --no-startup-id nautilus
