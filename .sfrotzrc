@@ -1,0 +1,32 @@
+[Interpreter]
+Number = 4
+Error Reporting = 1
+Ignore Errors = 0
+Expand Abbreviations = 0
+Tandy Bit = 0
+Wrap Script Lines = 80
+SaveNames = date
+
+[Window]
+AcWidth = 640
+AcHeight = 400
+
+[Display]
+
+[Fonts]
+antialias = 1
+#fontdir = /System/Library/Fonts/Supplemental
+#textroman=Arial.ttf@14
+#textbold=Arial Bold.ttf@14
+#textitalic=Arial Italic.ttf@14
+#textbolditalic=Arial Bold Italic.ttf@14
+#fixedroman=Courier New.ttf@12
+#fixedbold=Courier New Bold.ttf@12
+#fixeditalic=Courier New Italic.ttf@12
+#fixedbolditalic=Courier New Bold Italic.ttf@12
+
+[Resources]
+Dir=./        # the current dir
+Pict=PIC%d    # i.e. PIC1, PIC2, ...
+Snd=SND%d     # i.e. SND3, SND4, ...
+
